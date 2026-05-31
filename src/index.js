@@ -1,22 +1,23 @@
 const todoList = [];
-function AddTodo() { 
-    const newTask=prompt("Enter the new task:");
+function addTodo() {
+    const newTask = prompt("Enter the new task:");
+
+    if (newTask === null || newTask.trim() === "") {
+        alert("Task cannot be empty");
+        return;
+    }
 
 
-if(newTask!==null && newTask.trim()!==""){
-    const nTask=newTask.trim()
- todoList.push(nTask);
+    const nTask = newTask.trim()
+    todoList.push(nTask);
 
- const ul=document.getElementById("todo-list");
+    const ul = document.getElementById("todo-list");
 
- const li=document.createElement("li");
- li.textContent= nTask;
+    const li = document.createElement("li");
+    li.textContent = nTask;
 
- li.classList.add("todo-item-box");
- ul.appendChild(li);
-}
-else{
- alert("Task cannot be empty");
-}
+    li.classList.add("todo-item-box");
+    ul.appendChild(li);
+
 
 }
