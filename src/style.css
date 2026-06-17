@@ -15,3 +15,10 @@
     font-size: 16px;
     word-wrap: break-word; /* Prevents long words from breaking layout */
 }
+.delete-btn{
+    color:red;
+    font-weight: 1000;
+    font-size:large;
+    background:#f4f4f9;
+    margin-left:95%;
+}
