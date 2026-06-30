@@ -1,8 +1,9 @@
 const todoList = [];
 function addTodo() {
-    const newTask = prompt("Enter the new task:");
-
-    if (newTask === null || newTask.trim() === "") {
+    
+      const input=document.getElementById("todo-input");
+      const newTask=input.value.trim();
+    if (newTask === null) {
         alert("Task cannot be empty");
         return;
     }

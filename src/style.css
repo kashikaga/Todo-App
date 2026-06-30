@@ -17,9 +17,10 @@
 }
 
 .delete-btn{
-    color:red;
+    color:white;
     font-weight: 1000;
     font-size:large;
-    background:#f4f4f9;
+    background:red;
     margin-left:95%;
+    margin-right:5%;
 }
